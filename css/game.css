@@ -1,0 +1,30 @@
+.ans-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 0.8rem;
+    border: 0.06rem solid tomato;
+    background-color: white;
+}
+
+.choice-prefix {
+    padding: 0.8rem 1.8rem;
+    background-color: tomato;
+    color: white;
+}
+.choice-text {
+    padding: 0.8rem 1.8rem;
+    background-color: white;
+    width:100%;
+}
+
+#qtn {
+    margin-bottom: 1.5rem;
+}
+
+.ans-container:hover{
+    cursor:pointer;
+    box-shadow: 0 0.1rem 0.7rem tomato;
+    transform: translateY(-0.08rem);
+    transition: 0.6s;
+}
