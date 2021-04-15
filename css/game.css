@@ -28,3 +28,121 @@
     transform: translateY(-0.08rem);
     transition: 0.6s;
 }
+
+.correct {
+    background-color: rgb(15, 204, 15);
+}
+
+.incorrect {
+    background-color: rgb(211, 19, 19);
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+/* 
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #56a5eb;
+    width: 0%;
+}
+
+#loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+
+  @-webkit-keyframes correct {
+    0% {
+      border-color: green;
+      background-color: green;
+    }
+    25% {
+      border-color: green;
+      background-color: green;
+    }
+    100% {
+      border-color: black;
+      background-color: white;
+    }
+  }
+
+  
+@keyframes correct {
+    0% {
+      border-color: green;
+      background-color: green;
+    }
+    25% {
+      border-color: green;
+      background-color: green;
+    }
+    100% {
+      border-color: black;
+      background-color: white;
+    }
+  }
+  
+  @-webkit-keyframes incorrect {
+    0% {
+      border-color: red;
+      background-color: red;
+    }
+    25% {
+      border-color: red;
+      background-color: red;
+    }
+    100% {
+      border-color: black;
+      background-color: white;
+    }
+  }
+  
+  @keyframes incorrect {
+    0% {
+      border-color: red;
+      background-color: red;
+    }
+    25% {
+      border-color: red;
+      background-color: red;
+    }
+    100% {
+      border-color: black;
+      background-color: white;
+    }
+  }
+   */
