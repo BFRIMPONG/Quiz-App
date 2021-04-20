@@ -4,7 +4,8 @@ const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-
+const gHigh =JSON.parse(localStorage.getItem('gHigh')) || [];
+const cs =JSON.parse(localStorage.getItem('cs')) || [];
 const MAX_HIGH_SCORES = 5;
 
 finalScore.innerText = mostRecentScore;
@@ -20,10 +21,21 @@ saveHighScore = (e) => {
         score: mostRecentScore,
         name: username.value,
     };
-    highScores.push(score);
-    highScores.sort((a, b) => b.score - a.score);
-    highScores.splice(5);
+  let currentCategory = localStorage.getItem('category');
+  console.log(currentCategory);
+  
+  if(currentCategory == 9){
+    gHigh.push(score);
+    gHigh.sort((a, b) => b.score - a.score);
+    gHigh.splice(5);
+    localStorage.setItem('gHighscore', JSON.stringify(gHigh));
+  }else if(currentCategory == 18){
+    cs.push(score);
+    cs.sort((a, b) => b.score - a.score);
+    cs.splice(5);
+    localStorage.setItem('csHighscore', JSON.stringify(cs));
+  }
 
-    localStorage.setItem('highScores', JSON.stringify(highScores));
+  
     window.location.assign('/');
 };
